@@ -1,0 +1,65 @@
+---
+const textColor = "#fdd3bc";
+const backgroundColorTop = "#fdd3bc";
+const backgroundColorBottom = "#0a0a0a";
+
+import chatNoir from "../images/ChatNoir.png";
+---
+
+<section
+  class="text-[#fdd3bc]
+         py-20
+         sm:py-28
+         overflow-hidden"
+  style={`
+    color: ${textColor};
+    background: linear-gradient(
+      to bottom,
+      ${backgroundColorTop} 0%,
+      ${backgroundColorTop} 50%,
+      ${backgroundColorBottom} 50%,
+      ${backgroundColorBottom} 100%
+    );
+  `}
+>
+
+  <!-- Grid de 5 columnas -->
+  <div
+    class="grid
+           grid-cols-1
+           w-5/6
+           mx-auto
+           
+           md:grid-cols-2"
+  >
+    <div class="col-span-1
+                flex
+                flex-col
+                justify-center
+                items-center
+                p-6
+                z-10">
+      hola
+    </div>
+    <div class="shadow-xl/40
+           relative
+           overflow-hidden
+           rounded-2xl
+           border-1
+           border-[#fdd3bc]
+           aspect-[1/1]">
+      <img
+            src={chatNoir.src}
+            alt="ChatNoir"
+            class="col-span-1
+                  
+                  inset-0
+                  w-full
+                  h-full
+                  object-cover"
+          />
+    </div>
+
+  </div>
+
+</section>

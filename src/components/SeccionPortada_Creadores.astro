@@ -8,20 +8,18 @@ const textColor = "#fdd3bc";
 const backgroundColor = "#0a0a0a";
 
 const cardsCreadores = [
-  { title: "Aromas Fest",
-    image: imagenAromasFest.src},
-  { title: "Experiencia",
-    image: imagenAromasFest.src},
-  { title: "Talleres",
-    image: imagenAromasFest.src},
-  { title: "Avant Première",
-    image: imagenAromasFest.src},
-  { title: "Avant Première",
-    image: imagenAromasFest.src},
-  { title: "Avant Première",
-    image: imagenAromasFest.src},
-  { title: "Avant Première 3",
-    image: imagenAromasFest.src},
+  { title: "Karen", image: imagenAromasFest.src},
+  { title: "Gio", image: imagenAromasFest.src},
+  { title: "Natalia", image: imagenAromasFest.src},
+  { title: "Dominique", image: imagenAromasFest.src},
+  { title: "Claudia", image: imagenAromasFest.src},
+  { title: "Creador 06", image: imagenAromasFest.src},
+  { title: "Creador 07", image: imagenAromasFest.src},
+  { title: "Creador 08", image: imagenAromasFest.src},
+  { title: "Creador 09", image: imagenAromasFest.src},
+  { title: "Creador 10", image: imagenAromasFest.src},
+  { title: "Creador 11", image: imagenAromasFest.src},
+  { title: "Creador 12", image: imagenAromasFest.src},
 ];
 ---
 
@@ -39,14 +37,14 @@ const cardsCreadores = [
             items-end
 
             grid
-            grid-cols-3
+            grid-cols-2
             gap-6
 
-            lg:grid-cols-5">
+            md:grid-cols-5">
 
       <!-- TEXTO: 3 de 5 columnas -->
       <div
-        class="col-span-3
+        class="col-span-2
                flex
                flex-col
                justify-between
@@ -74,33 +72,35 @@ const cardsCreadores = [
         </h2>
 
       </div>
-
       {
-        cardsCreadores.map((card) => (
-                                      <Card_Creadores
-                                      image={card.image}
-                                      title={card.title}
-                                      />
-                                      ))
+          cardsCreadores.map((card) => (
+                                        <Card_Creadores
+                                        image={card.image}
+                                        title={card.title}
+                                        />
+                                        ))
       }
-      
-      <!-- Botón -->
-        <div class="col-span-5 
-                    mt-7 
-                    flex 
-                    justify-end 
-                    border-0">
-          <Button
-            title="Conoce la lista completa de creadores"
-            height="40px"
-            textColor="#0a0a0a"
-            backgroundColor="#fdd3bc"
-            border="none"
-            href="/aromasfest"
-          />
-        </div>
-
     </div>
+    <!-- Botón -->
+    <div class="w-5/6
+                mx-auto
+                border-0
+                ">
+      <div class="flex 
+                  justify-end
+                  mt-6">
+        <Button
+          title="Más creadores"
+          height="40px"
+          textColor="#0a0a0a"
+          backgroundColor="#fdd3bc"
+          border="none"
+          href="/aromasfest"
+        />
+      </div>
+    </div>
+
+    
 
    
 

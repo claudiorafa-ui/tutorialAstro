@@ -1,5 +1,9 @@
 ---
-import imagenAromasFest from "../images/background_c.jpg";
+import imagenAromasFest_01 from "../images/SeccionAromasFest-Foto02.png";
+import imagenAromasFest_02 from "../images/SeccionAromasFest-Foto04.png";
+import imagenAromasFest_03 from "../images/SeccionAromasFest-Foto05.png";
+import imagenAromasFest_04 from "../images/SeccionAromasFest-Foto03.png";
+import imagenAromasFest_05 from "../images/SeccionAromasFest-Foto01.png";
 import Button from "./Button.astro";
 
 const textColor = "#0a0a0a";
@@ -9,7 +13,7 @@ const textColor = "#0a0a0a";
   class="bg-[#fdd3bc] text-black py-20 sm:py-28 overflow-hidden"
   style={`color: ${textColor};`}
 >
-  <div class=" w-full">
+  <div class="w-full">
 
     <!-- Grid de 2 columnas -->
     <div
@@ -29,7 +33,9 @@ const textColor = "#0a0a0a";
                flex
                flex-col
                justify-between
-               py-6
+               align-start
+               py-3
+               border-0
                
                lg:col-span-1"
       >
@@ -39,7 +45,7 @@ const textColor = "#0a0a0a";
           class="font-serif
                  font-bold
                  uppercase
-                 text-5xl
+                 text-6xl
                  
                  tracking-tight
                  text-start
@@ -54,11 +60,14 @@ const textColor = "#0a0a0a";
 
         <!-- Descripción -->
         <p
-          class="mt-8
+          class="my-3
                  max-w-md
-                 text-base
-                 sm:text-lg
-                 leading-relaxed"
+                 text-2xl
+                 leading-relaxed
+                 py-3
+                 font-serif
+                 
+                 md:text-3xl"
         >
           Una experiencia donde los aromas, la creatividad
           y las personas se encuentran para descubrir
@@ -66,7 +75,12 @@ const textColor = "#0a0a0a";
         </p>
 
         <!-- Botón -->
-        <div class="mt-7 flex justify-start">
+        <div class="w-full 
+                    mx-auto
+                    border-0
+                    flex
+                    justify-start
+                   ">
           <Button
             title="Conoce más"
             height="40px"
@@ -91,7 +105,7 @@ const textColor = "#0a0a0a";
                md:aspect-[1/1]"
       >
         <img
-          src={imagenAromasFest.src}
+          src={imagenAromasFest_01.src}
           alt="AromasFest"
           class="absolute
                  inset-0
@@ -126,7 +140,7 @@ const textColor = "#0a0a0a";
                aspect-[1/1]"
       >
         <img
-          src={imagenAromasFest.src}
+          src={imagenAromasFest_02.src}
           alt="AromasFest"
           class="absolute
                  inset-0
@@ -146,7 +160,7 @@ const textColor = "#0a0a0a";
                aspect-[1/1]"
       >
         <img
-          src={imagenAromasFest.src}
+          src={imagenAromasFest_03.src}
           alt="AromasFest"
           class="absolute
                  inset-0
@@ -166,7 +180,7 @@ const textColor = "#0a0a0a";
                aspect-[1/1]"
       >
         <img
-          src={imagenAromasFest.src}
+          src={imagenAromasFest_04.src}
           alt="AromasFest"
           class="absolute
                  inset-0
@@ -186,7 +200,7 @@ const textColor = "#0a0a0a";
                aspect-[1/1]"
       >
         <img
-          src={imagenAromasFest.src}
+          src={imagenAromasFest_05.src}
           alt="AromasFest"
           class="absolute
                  inset-0
