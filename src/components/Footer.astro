@@ -1,82 +1,146 @@
 ---
-import Button from "./Button.astro";
-import logoAromasFestVertical from "../images/logo_AromasFest_Vertical.svg";
+import logoAromasFestVertical from "../images/AromasFest-Logo-Simple.svg";
 
-const textColor = "#ffffff";
+const textColor = "#fdd3bc";
 ---
 
-<main
-  class="relative 
-            overflow-hidden 
-            font-serif 
-            bg-black"
+<footer
+  class="relative
+         overflow-hidden
+         bg-black
+         font-serif"
   style={`color: ${textColor};`}
 >
+  <div class="relative z-10 w-5/6 mx-auto py-16">
 
-  <!-- Contenido de la portada -->
-  <div class="relative z-10">
-
-    <!-- Grilla principal -->
-    <section
-      class="w-5/6
-            mx-auto
-            flex
-            flex-col
-            gap-10
-            py-24
+    <!-- Contenido principal -->
+    <div
+      class="flex
+             flex-col
+             gap-12
              
-
              md:grid
-             md:grid-cols-2
-             md:py-0"
+             md:grid-cols-3
+             md:items-center"
     >
-
-      <!-- Columna Logo AromasFest -->
+      <!-- Festival -->
       <div
         class="flex
-               items-center
-               justify-center
-               py-8
-               border-0
+               flex-col
+               gap-3
+               text-center
+               
+               md:text-end"
+      >
+        <h2 class="text-4xl">
+          AromasFest
+        </h2>
 
-               md:order-1
-               md:col-span-1
-               md:mt-20
-               md:justify-start"
+        <p class="text-base
+                leading-relaxed
+                opacity-70
+
+                md:text-xl">
+          El primer festival del perfume en Chile.
+        </p>
+
+        <p class="text-sm 
+                  opacity-70
+                  md:text-base">
+          Aromas, creatividad y personas.
+        </p>
+      </div>
+
+      <!-- Logo -->
+      <div
+        class="flex
+               justify-center
+               "
       >
         <img
           src={logoAromasFestVertical.src}
-          alt="Logo AromasFest"
+          alt="AromasFest"
           class="h-auto
-                 max-h-[30vh]
-                 w-3/4
+                 w-32
                  object-contain
-
-                 lg:h-5/6
-                 lg:w-auto"
+                 
+                 md:w-36"
         />
       </div>
 
-      <div
+
+      <!-- Navegación -->
+      <nav
         class="flex
-               items-end
-               justify-center
-               py-8
-               border-0
-
-               md:order-1
-               md:col-span-1
-               md:mt-20
-               md:justify-end"
+               flex-col
+               gap-3
+               text-center
+               text-2xl
+               
+               md:items-start
+               "
+        aria-label="Navegación del sitio"
       >
-        <h1 class="sans-serif">
-            Creado por AromasFest | 2026
-        </h1>
-      </div>
+        <a
+          href="#inicio"
+          class="
+          transition-opacity 
+          hover:opacity-60"
+        >
+          Inicio
+        </a>
 
+        <a
+          href="#avant-premiere"
+          class="transition-opacity hover:opacity-60"
+        >
+          Avant Première
+        </a>
 
-    </section>
+        <a
+          href="#iii_festival"
+          class="transition-opacity hover:opacity-60"
+        >
+          IIIer Festival
+        </a>
+
+        
+      </nav>
+
+    </div>
+
+    <!-- Separador -->
+    <div class="my-10 h-px bg-white/20"></div>
+
+    <!-- Pie inferior -->
+    <div
+      class="flex
+             flex-col
+             gap-3
+             text-center
+             text-xs
+             opacity-60
+             
+             md:flex-row
+             md:items-center
+             md:justify-between
+             md:text-left"
+    >
+      <p>
+        © 2026 AromasFest
+      </p>
+
+      <p>
+        Creado por AromasFest
+      </p>
+
+      <a
+        href="https://www.instagram.com/aromasfest/?hl=es"
+        class="transition-opacity hover:opacity-100"
+      >
+        Instagram
+      </a>
+    </div>
 
   </div>
-
-</main>
+</footer>

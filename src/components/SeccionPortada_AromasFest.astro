@@ -7,9 +7,11 @@ import imagenAromasFest_05 from "../images/SeccionAromasFest-Foto01.png";
 import Button from "./Button.astro";
 
 const textColor = "#0a0a0a";
+
 ---
 
 <section
+  id="iii_festival"
   class="bg-[#fdd3bc] text-black py-20 sm:py-28 overflow-hidden"
   style={`color: ${textColor};`}
 >
@@ -19,11 +21,9 @@ const textColor = "#0a0a0a";
     <div
       class="w-5/6
             mx-auto
-
             grid
             grid-cols-2
-            gap-6
-            
+            gap-10
             items-stretch"
     >
 
@@ -37,7 +37,7 @@ const textColor = "#0a0a0a";
                py-3
                border-0
                
-               lg:col-span-1"
+               md:col-span-1"
       >
 
         <!-- Título -->
@@ -47,7 +47,6 @@ const textColor = "#0a0a0a";
                  uppercase
                  text-6xl
                  border-0
-                 
                  tracking-tight
                  text-start
 
@@ -98,12 +97,16 @@ const textColor = "#0a0a0a";
       <!-- IMAGEN: 1 de 2 columnas -->
       <div
         class="col-span-2
-               lg:col-span-1
                relative
                overflow-hidden
                rounded-2xl
-               aspect-[4/3]
-               md:aspect-[1/1]"
+               aspect-[1/1]
+               border-2
+               border-[#fdd3bc]
+               shadow-xl/40
+               md:aspect-[1/1]
+               md:col-span-1"
+               
       >
         <img
           src={imagenAromasFest_01.src}
@@ -114,6 +117,29 @@ const textColor = "#0a0a0a";
                  h-full
                  object-cover"
         />
+        <!-- texto sobre imagen -->
+        <div class="absolute
+                    bottom-0
+                    left-0
+                    w-full
+                    rounded-b-2xl
+                    md:p-6
+                    ">
+          <p class="text-base
+                     font-serif
+                     
+                     tracking-tight
+                     text-end
+                     text-white
+                     mb-6
+                     md:text-2xl">
+            Sábado 7 de noviembre de 2026 <br />
+            11:00 a 21:00 hrs. <br />
+            Malbec 12851 <br />
+            Hotel Wyndham Pettra,<br/>
+            La Dehesa <br />
+          </p>
+        </div>
       </div>
 
     </div>
@@ -123,10 +149,9 @@ const textColor = "#0a0a0a";
       class="w-5/6
             mx-auto
             mt-6
-
             grid
             grid-cols-4
-            gap-6
+            gap-10
             
             items-stretch"
     >
@@ -134,11 +159,15 @@ const textColor = "#0a0a0a";
       <!-- IMAGEN 1: 1 de 4 columnas -->
       <div
         class="col-span-2
-               md:col-span-1
                relative
                overflow-hidden
                rounded-2xl
-               aspect-[1/1]"
+               aspect-[1/1]
+               border-2
+               border-[#fdd3bc]
+               shadow-xl/40
+               
+               md:col-span-1"
       >
         <img
           src={imagenAromasFest_02.src}
@@ -151,14 +180,18 @@ const textColor = "#0a0a0a";
         />
       </div>
 
-      <!-- IMAGEN 2: 3 de 12 columnas -->
+      <!-- IMAGEN 2: 2 de 4 columnas -->
       <div
         class="col-span-2
-               md:col-span-1
                relative
                overflow-hidden
                rounded-2xl
-               aspect-[1/1]"
+               aspect-[1/1]
+               border-2
+               border-[#fdd3bc]
+               shadow-xl/40
+               
+               md:col-span-1"
       >
         <img
           src={imagenAromasFest_03.src}
@@ -171,14 +204,18 @@ const textColor = "#0a0a0a";
         />
       </div>
 
-      <!-- IMAGEN 3: 3 de 12 columnas -->
+      <!-- IMAGEN 3: 3 de 4 columnas -->
       <div
         class="col-span-2
-               md:col-span-1
                relative
                overflow-hidden
                rounded-2xl
-               aspect-[1/1]"
+               aspect-[1/1]
+               border-2
+               border-[#fdd3bc]
+               shadow-xl/40
+               
+               md:col-span-1"
       >
         <img
           src={imagenAromasFest_04.src}
@@ -191,14 +228,18 @@ const textColor = "#0a0a0a";
         />
       </div>
 
-      <!-- IMAGEN 4: 3 de 12 columnas -->
+      <!-- IMAGEN 4: 4 de 4 columnas -->
       <div
         class="col-span-2
-               md:col-span-1
                relative
                overflow-hidden
                rounded-2xl
-               aspect-[1/1]"
+               aspect-[1/1]
+               border-2
+               border-[#fdd3bc]
+               shadow-xl/40
+               
+               md:col-span-1"
       >
         <img
           src={imagenAromasFest_05.src}

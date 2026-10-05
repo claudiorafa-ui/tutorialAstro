@@ -9,20 +9,12 @@ import Button from "./Button.astro";
 ---
 
 <section
+  id="avant-premiere"
   class="text-[#fdd3bc]
+         bg-[#444444] 
          py-20
          sm:py-28
          overflow-hidden"
-  style={`
-    color: ${textColor};
-    background: linear-gradient(
-      to bottom,
-      ${backgroundColorTop} 0%,
-      ${backgroundColorTop} 50%,
-      ${backgroundColorBottom} 50%,
-      ${backgroundColorBottom} 100%
-    );
-  `}
 >
 
   <!-- Grid de 5 columnas -->
@@ -32,39 +24,36 @@ import Button from "./Button.astro";
            w-5/6
            mx-auto
            border-0
-           bg-[#222222]
            rounded-2xl
+           gap-10
            
            md:grid-cols-2"
   > 
     <!-- Imagen de Chat-noir -->
     <div class="col-span-1
             shadow-xl/40
-           rounded-2xl
-           relative
-           overflow-hidden
-           border-0
-           aspect-[1/1]">
+            rounded-2xl
+            relative
+            overflow-hidden
+            border-2
+            border-[#fdd3bc]
+            aspect-[1/1]">
       <img
             src={chatNoir.src}
             alt="ChatNoir"
             class="
-                  
                   inset-0
                   w-full
                   h-full
                   object-cover"
           />
-        <!-- texto -->
+        <!-- texto sobre imagen -->
         <div class="absolute
                     bottom-0
                     left-0
                     w-full
-                    p-6
-                    bg-gradient-to-t
-                    from-[#000000]
-                    to-transparent
                     rounded-b-2xl
+                    md:p-6
                     ">
           <p class="text-base
                      font-serif
@@ -73,9 +62,10 @@ import Button from "./Button.astro";
                      text-center
                      text-white
                      mb-6
-                     md:text-xl">
-            Barum Parfum · Loris Parfum · Parfumeurs du Monde · Pure Signature · Roussar Parfum · 
-            Gabriel De Carvalho · Federico Kukso · Atelier Galimard & Giolor Perfumes
+                     md:text-2xl">
+            Viernes 6 de noviembre de 2026 <br />
+            18:00 a 22:00 hrs. <br />
+            Chat Noir, La Dehesa <br />
           </p>
         </div>
           
@@ -91,13 +81,13 @@ import Button from "./Button.astro";
                 z-10">
       <h1 class="mt-10
                  text-4xl
-                 text-white
+                 
                  font-serif
                  md:text-6xl">
         Avant Premiére
       </h1>
       <h2 class="text-2xl
-                 text-white
+                 
                  font-serif
                  mb-4
                  md:text-3xl">
@@ -115,11 +105,12 @@ import Button from "./Button.astro";
       </p>
       <p class="mt-6
                 font-serif
-               text-base
-               leading-relaxed">
-        Viernes 6 de noviembre de 2026 <br />
-        18:00 a 22:00 hrs. <br />
-        Chat Noir, La Dehesa <br />
+                text-base
+                leading-relaxed">
+               <strong>NUESTRAS MARCAS: </strong><br />
+               <br />
+               Barum Parfum · Loris Parfum · Parfumeurs du Monde · Pure Signature · Roussar Parfum · 
+              Gabriel De Carvalho · Federico Kukso · Atelier Galimard & Giolor Perfumes
       </p>
       <!-- Botón -->
       <div class="w-full
